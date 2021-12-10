@@ -11,6 +11,7 @@ module.exports = {
           '@shared': './src/shared',
           '@pages': './src/pages',
           '@routes': './src/routes',
+          '@api': './src/api',
           '@assets': './assets'
         }
       }

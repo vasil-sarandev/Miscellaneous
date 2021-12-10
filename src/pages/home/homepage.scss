@@ -1,5 +1,8 @@
 .homepage {
   &__title {
+    h1 {
+      margin: 0;
+    }
     font-size: 40px;
     margin: var(--gutter) 0;
   }

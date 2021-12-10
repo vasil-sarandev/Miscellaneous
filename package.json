@@ -43,6 +43,13 @@
     ],
     "parser": "@typescript-eslint/parser",
     "rules": {
+      "jsx-a11y/click-events-have-key-events": [
+        "off"
+      ],
+      "jsx-a11y/no-static-element-interactions": [
+        "off"
+      ],
+      "no-unused-vars": "warn",
       "import/no-cycle": [
         2,
         {
@@ -80,6 +87,7 @@
           ]
         }
       ],
+      
       "prettier/prettier": [
         "error",
         {
@@ -109,6 +117,10 @@
             [
               "@routes",
               "./src/routes"
+            ],
+            [
+              "@api",
+              "./src/api"
             ],
             [
               "@assets",
