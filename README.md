@@ -1,1 +1,1 @@
-# to run the project: run "yarn && yarn start"
+# running the project: run "yarn && yarn start"
