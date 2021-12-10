@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# Purpose of project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was done as a take-home task for an interview I was a part of. It was bootstrapped with CRA and uses TypeScript. The only external module used is react-modal.
 
-## Available Scripts
+## First time running the project
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn && yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,33 +14,59 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+## Running the project subsequently
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn && yarn start`
 
-### `yarn build`
+## Assignment for the take-home task:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a simple web app with only 2 pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The first page:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Title - the text “Products” that
+is also a link to the second page
 
-### `yarn eject`
+Random text and a picture underneath
+the title
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Footer with links to the Home
+and Products pages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The second page:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Sticky header with welcoming text
+on the left side and a small avatar on the right side
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The same footer from the first
+page
 
-## Learn More
+A list of products in the middle
+with the following columns: id, name, description, image
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Three actions for the table elements - Add, Update, Delete
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Add - should create new rows in
+the table. Could be done with a separate popup with a form or any way you think is fit (the UI is up to you). Required fields are: id, name and description. Id should be unique and name should be at least 3 characters long. Image is optional.
+
+Update - same requirements as
+for the add action but for an existing record. The required and optional fields are the same. Again the UI is up to you.
+
+Delete - action should simply
+remove a record from the table.
+
+You are free to use any colors, paddings, margins, borders, fonts, etc. you like. The most important thing is code structure and code styling.
+
+Task requirements:
+
+ReactJS as a dependency
+
+The list of products should be custom made
+
+The products should be in a json file and all actions should have a 0.5 secs delay.
+
+There is no limit to the number of libraries you can use.
+
+Instructions on how to run the project should be included in the readme.
+
+When finished, commit the code to a public repository and email us the link.
