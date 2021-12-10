@@ -1,1 +1,1 @@
-# interview-task-1
+# to run the project: run "yarn && yarn start"
