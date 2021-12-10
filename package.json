@@ -9,15 +9,19 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/history": "^4.7.9",
     "@types/jest": "^26.0.15",
+    "@types/nanoid": "^3.0.0",
     "@types/node": "^12.0.0",
     "@types/node-sass": "^4.11.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-modal": "^3.13.1",
     "@types/react-router-dom": "^5.3.2",
     "history": "5",
+    "nanoid": "^3.1.30",
     "node-sass": "6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-modal": "^3.14.4",
     "react-router-dom": "6",
     "react-scripts": "4.0.3",
     "typescript": "^4.5.3",
@@ -51,10 +55,7 @@
       ],
       "no-unused-vars": "warn",
       "import/no-cycle": [
-        2,
-        {
-          "maxDepth": 1
-        }
+        "off"
       ],
       "import/prefer-default-export": [
         "off"
@@ -87,7 +88,6 @@
           ]
         }
       ],
-      
       "prettier/prettier": [
         "error",
         {

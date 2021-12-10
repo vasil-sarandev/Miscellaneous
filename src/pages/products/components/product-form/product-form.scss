@@ -1,0 +1,7 @@
+.product-form {
+  &__submit {
+    margin-top: var(--gutter);
+    display: flex;
+    justify-content: flex-end;
+  }
+}

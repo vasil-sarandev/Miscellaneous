@@ -24,4 +24,11 @@
       height: 24px;
     }
   }
+  &__product-actions {
+    display: flex;
+    align-items: center;
+    div {
+      cursor: pointer;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { DeleteIcon, EditIcon, ProductType } from '@shared'
+import { useProjects } from '../../context'
 import './products-table.scss'
 
 interface Props {
@@ -8,7 +9,15 @@ interface Props {
 }
 
 export const ProductsTable: FC<Props> = ({ data, loading }) => {
+  const { deleteProduct, fetchProducts, setUpdateProductData } = useProjects()
+
   const tableData = !data && loading ? Array(10).fill({}) : data
+
+  const handleDelete = async (id: string) => {
+    await deleteProduct(id)
+    fetchProducts()
+  }
+
   return (
     <div className='products-table'>
       <table>
@@ -30,8 +39,8 @@ export const ProductsTable: FC<Props> = ({ data, loading }) => {
         </thead>
         <tbody>
           {tableData ? (
-            tableData.map((row) => (
-              <tr>
+            tableData.map((row, index) => (
+              <tr key={row.id ? row.id : index}>
                 <td className='products-table__product-image'>
                   {loading ? (
                     <>...</>
@@ -54,8 +63,12 @@ export const ProductsTable: FC<Props> = ({ data, loading }) => {
                     <>...</>
                   ) : (
                     <>
-                      <EditIcon />
-                      <DeleteIcon />
+                      <div onClick={() => setUpdateProductData(row)}>
+                        <EditIcon />
+                      </div>
+                      <div onClick={() => handleDelete(row.id)}>
+                        <DeleteIcon />
+                      </div>
                     </>
                   )}
                 </td>
