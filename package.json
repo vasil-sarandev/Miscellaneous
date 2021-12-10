@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -17,13 +18,13 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
+    "typescript": "^4.5.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "format:check": "prettier -c src",
     "format:fix": "prettier -w src"
@@ -40,6 +41,12 @@
     ],
     "parser": "@typescript-eslint/parser",
     "rules": {
+      "import/prefer-default-export": [
+        "off"
+      ],
+      "react/require-default-props": [
+        "off"
+      ],
       "react/jsx-filename-extension": [
         0,
         {
@@ -75,6 +82,29 @@
         }
       ],
       "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "alias": {
+          "map": [
+            [
+              "@shared",
+              "./src/shared"
+            ],
+            [
+              "@pages",
+              "./src/pages"
+            ]
+          ],
+          "extensions": [
+            ".ts",
+            ".tsx",
+            ".js",
+            ".jsx",
+            ".json"
+          ]
+        }
+      }
     }
   },
   "browserslist": {
@@ -93,8 +123,10 @@
     "@types/eslint-config-prettier": "^6.11.0",
     "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/prettier": "^2.4.2",
+    "craco-alias": "^3.0.1",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1"
