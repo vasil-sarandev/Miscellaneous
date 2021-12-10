@@ -1,6 +1,5 @@
 {
   "name": "kidso-demo",
-  "homepage":"https://github.com/vasil-sarandev/interview-task-1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,7 +34,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "predeploy": "craco build", 
+    "predeploy": "craco build",
     "deploy": "gh-pages -d build",
     "format:check": "prettier -c src",
     "format:fix": "prettier -w src"
