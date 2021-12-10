@@ -10,7 +10,8 @@ module.exports = {
         aliases: {
           '@shared': './src/shared',
           '@pages': './src/pages',
-          '@routes': './src/routes'
+          '@routes': './src/routes',
+          '@assets': './assets'
         }
       }
     }
