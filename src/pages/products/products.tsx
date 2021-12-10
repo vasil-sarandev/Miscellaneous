@@ -1,3 +1,4 @@
 import { FC } from 'react'
+import './products.scss'
 
-export const ProductsPage: FC = () => <>Hello from products page.</>
+export const ProductsPage: FC = () => <div className='products-page'>Hello from products page.</div>

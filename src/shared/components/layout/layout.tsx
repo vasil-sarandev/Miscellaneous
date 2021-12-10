@@ -1,4 +1,6 @@
 import { FC } from 'react'
+import { Footer } from './footer'
+import { Header } from './header'
 import './layout.scss'
 
 export interface LayoutProps {
@@ -8,8 +10,12 @@ export interface LayoutProps {
 
 export const Layout: FC<LayoutProps> = ({ hasHeader = true, hasFooter = true, children }) => (
   <div className='layout'>
-    {hasHeader && <div className='layout__header'>Hello from header</div>}
+    {hasHeader && <Header />}
     <main className='layout__main'>{children}</main>
-    {hasFooter && <div className='layout__footer'>Hello from footer.</div>}
+    {hasFooter && (
+      <div className='layout__footer'>
+        <Footer />
+      </div>
+    )}
   </div>
 )

@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  box-shadow: var(--box-shadow-bottom);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  &__inner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 var(--gutter);
+    max-width: var(--restrict-width);
+    padding: 0 var(--gutter);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: block;
+    font-size: 44px;
+    font-weight: 900;
+    margin-right: 16px;
+  }
+  &__right {
+    height: 24px;
+  }
+  &__profile-icon {
+    cursor: pointer;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

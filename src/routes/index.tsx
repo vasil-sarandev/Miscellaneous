@@ -38,6 +38,7 @@ export const AppRouter = () => (
       {appRoutes.map((route) => (
         <Route
           path={route.path}
+          key={route.path}
           element={
             <route.layout.component {...route.layout.props}>
               <route.component />

@@ -1,0 +1,39 @@
+.footer {
+  padding: 40px 0;
+  border-top: var(--border-default);
+  background: #f2f2f2;
+  &__middle {
+    flex: 1;
+  }
+  &__inner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 var(--gutter);
+    max-width: var(--restrict-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__socials {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    & div:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  &__logo {
+    font-size: 44px;
+    font-weight: 900;
+  }
+  &__navigation-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--font-secondary);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  &__navigation-links {
+    font-size: 14px;
+  }
+}

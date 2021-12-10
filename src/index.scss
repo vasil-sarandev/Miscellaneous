@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+  --primary: #000;
+  --secondary: #fff;
+  --box-shadow-bottom: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  --font: rgba(0, 0, 0, 0.78);
+  --font-size: 16px;
+  --font-secondary: #a7a7a7;
+  --font-secondary2: rgb(114, 128, 143);
+  --gray-background: #f5f8fc;
+  --border-default: 1px solid #e4e6ea99;
+  --restrict-width: 1400px;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #ff5245;
+  --light: #f5f8fc;
+  --dark: #343a40;
+  --cold: #216dfb;
+  --hot: #e85d60;
+  --gutter: 25px;
+  --padding: 50px;
+  --font-family-default: 'Roboto', sans-serif;
+}
+
+/* reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size);
+  color: var(--font);
+  font-family: var(--font-family-default);
+}
+
+a {
+  color: var(--font);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: var(--info);
+}
