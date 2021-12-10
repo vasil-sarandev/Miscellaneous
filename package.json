@@ -7,16 +7,18 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/history": "^4.7.9",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/node-sass": "^4.11.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.3.2",
-    "node-sass": "^7.0.0",
+    "history": "5",
+    "node-sass": "6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.0.2",
+    "react-router-dom": "6",
     "react-scripts": "4.0.3",
     "typescript": "^4.5.3",
     "web-vitals": "^1.0.1"
@@ -58,6 +60,7 @@
           ]
         }
       ],
+      "react/jsx-props-no-spreading": ["off"],
       "import/extensions": [
         0,
         {
@@ -94,6 +97,10 @@
             [
               "@pages",
               "./src/pages"
+            ],
+            [
+              "@routes",
+              "./src/routes"
             ]
           ],
           "extensions": [

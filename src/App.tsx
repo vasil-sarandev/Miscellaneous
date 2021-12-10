@@ -1,9 +1,5 @@
-import { Homepage } from '@pages'
+import { AppRouter } from '@routes'
 
-const App = () => (
-  <div className='App'>
-    <Homepage />
-  </div>
-)
+const App = () => <AppRouter />
 
 export default App

@@ -3,8 +3,9 @@
     "baseUrl": "./",
     "paths": {
       "@shared": ["./src/shared"],
-      "@pages": ["./src/pages/"],
-      "@assets": ["./src/assets"]
+      "@pages": ["./src/pages"],
+      "@assets": ["./src/assets"],
+      "@routes": ["./src/routes"]
     }
   }
 }
