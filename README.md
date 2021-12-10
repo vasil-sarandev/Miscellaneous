@@ -2,6 +2,10 @@
 
 This project was done as a take-home task for an interview I was a part of. It was bootstrapped with CRA and uses TypeScript. The only external module used is react-modal.
 
+## View the project in the web
+
+You can see the project without installing anything at [https://kind-heisenberg-e003eb.netlify.app/](Netlify). Mobile responsiveness wasn't a requirement so I haven't really worked on it. Please use a desktop to access the website.
+
 ## First time running the project
 
 In the project directory, you can run:
