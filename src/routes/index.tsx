@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomePage, ProductsPage } from '@pages'
-import { Layout } from '@shared'
+import { Layout, LayoutProps } from '@shared'
 
 export const STATIC_ROUTES = {
   homepage: '/',
@@ -11,15 +11,25 @@ export const STATIC_ROUTES = {
 interface AppRoute {
   path: string
   component: FC
-  layoutProps?: {
-    hasHeader?: boolean
-    hasFooter?: boolean
+  layout: {
+    component: FC
+    props?: LayoutProps
   }
 }
 
 const appRoutes: AppRoute[] = [
-  { path: STATIC_ROUTES.homepage, component: HomePage, layoutProps: { hasHeader: false } },
-  { path: STATIC_ROUTES.products, component: ProductsPage }
+  {
+    path: STATIC_ROUTES.homepage,
+    component: HomePage,
+    layout: { component: Layout, props: { hasHeader: false } }
+  },
+  {
+    path: STATIC_ROUTES.products,
+    component: ProductsPage,
+    layout: {
+      component: Layout
+    }
+  }
 ]
 
 export const AppRouter = () => (
@@ -29,9 +39,9 @@ export const AppRouter = () => (
         <Route
           path={route.path}
           element={
-            <Layout {...route.layoutProps}>
+            <route.layout.component {...route.layout.props}>
               <route.component />
-            </Layout>
+            </route.layout.component>
           }
         />
       ))}
