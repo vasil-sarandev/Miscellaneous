@@ -4,9 +4,9 @@ This is a general purpose repository. Contains a showcase of projects and stuff 
 
 #### Projects Showcase
 
-1. [IBC Workshops](./Showcase/ibc-workshops/README.md)
-2. [Shopsy](./Showcase/shopsy/README.md)
-3. [Ordercloud](./Showcase/ordercloud/README.md)
+1. [IBC Workshops](./Showcase/ibc-workshops)
+2. [Shopsy](./Showcase/shopsy)
+3. [Ordercloud](./Showcase/ordercloud)
 
 #### Interview Tasks
 
