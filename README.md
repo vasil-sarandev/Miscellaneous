@@ -1,6 +1,6 @@
 ### Showcase
 
-This is a general purpose repository that contains a showcase of projects and stuff I've built over the years.
+This is a general purpose repository that contains a showcase of projects I've built over the years and more code for miscellaneous purposes - interview tasks, solving algorithmic challenges, and etc. 
 
 #### Projects Showcase
 
